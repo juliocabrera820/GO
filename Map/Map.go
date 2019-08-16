@@ -11,10 +11,17 @@ func main() {
 	mi := make(map[int]string)
 	mi[1]= "Value"
 	mi[2]= "Value2"
+	mi[3]= "Value2"
+	mi[4]= "Value3"
 	fmt.Println(mi[1])
 	//Eliminar item con la clave
 	delete(mi,1)
+	//mostrar valor
 	for _, it := range mi {
 		fmt.Println(it)
+	}
+	//Mostrar clave y valor
+	for key,value := range mi{
+		fmt.Println("%d => %s\n",key,value)
 	}
 }
