@@ -22,6 +22,6 @@ func main() {
 	}
 	//Mostrar clave y valor
 	for key,value := range mi{
-		fmt.Println("%d => %s\n",key,value)
+		fmt.Printf("%d => %s\n",key,value)
 	}
 }
